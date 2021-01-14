@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="style/layui-v2.4.5/layui/css/layui.css">
+    <script src="style/layui-v2.4.5/layui/layui.js"></script>
+    <link rel="stylesheet" href="style/css/login.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="name">中国铁路上海局集团有限公司上海铁路枢纽工程建设指挥部</div>
+    <div class="ellipse">
+        <div class="login">
+            <p class="title">协同办公平台</p>
+            <p class="welcome">欢迎登录</p>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <i class="layui-icon layui-icon-username"></i>
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <i class="layui-icon layui-icon-password"></i>
+                        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-mid layui-word-aux"><a href="#">忘记密码</a></div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+  layui.use('form', function(){
+    var form = layui.form;
+
+    //监听提交
+    form.on('submit(formDemo)', function(data){
+      // layer.msg(JSON.stringify(data.field));
+      // return false;
+    });
+  });
+</script>

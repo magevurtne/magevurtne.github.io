@@ -1,0 +1,98 @@
+.wrap{
+    position:fixed;
+    top: 0;
+    left: 0;
+    /*bottom: 0;*/
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background: url(../../style/images/bg.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+.wrap .name{
+    padding:30px 0 0 30px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+}
+.wrap .ellipse{
+    background-color: #fff;
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    right: -750px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 10;
+    top: -250px;
+}
+.wrap .ellipse .login{
+    margin: 32% 0  0 12%;
+    width: 370px;
+    text-align: center;
+}
+.login .title{
+    font-size: 31px;
+    font-weight: bold;
+    color: #1C78DF;
+}
+.login .welcome{
+    margin: 15% 0 5% 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.layui-input-block{
+    margin-left: 0;
+}
+.layui-input{
+    border-radius: 4px;
+    height: 50px;
+    line-height: 1.7;
+    padding-left: 70px;
+}
+.layui-icon{
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    z-index: 30;
+    top: 15px;
+    left: 30px;
+}
+
+input::-webkit-input-placeholder{
+    color:#ccc;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#ccc;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#ccc;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#ccc;
+}
+.layui-form-mid{
+    float: right;
+    padding: 0!important;
+    margin-right: 0;
+}
+.layui-form-mid a{
+    color: #1C78DF;
+}
+.layui-btn{
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20%;
+    width: 100%;
+    border-radius: 4px;
+    background-color:#1C78DF;
+}
